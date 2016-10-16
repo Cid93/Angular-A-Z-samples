@@ -3,7 +3,8 @@
 </h1>
 <div>
     <app-dire-bonjour [nom]="name" (clique)="alert($event)"></app-dire-bonjour>
-    <app-template-driven-form (submitted)="changeName($event)"></app-template-driven-form>
+    <!-- <app-template-driven-form (submitted)="changeName($event)"></app-template-driven-form> -->
+    <app-model-driven-form (submitted)="changeName($event)"></app-model-driven-form>
 </div>
 <!-- <div>
     <p> Voici la liste de postes via mon apiService mocked</p>

@@ -1,0 +1,8 @@
+<p>Voulez-vous changez de nom ?</p>
+<form [formGroup]="form" (ngSubmit)="send(form)">
+	<label>Nouveau nom:</label>
+  <input type="text" formControlName="name">
+  <p *ngIf="form.controls.name.errors">Je suis sûr que vous avez un prénom</p>
+
+  <button type="submit">Changer de nom</button>
+</form>
