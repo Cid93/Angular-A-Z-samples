@@ -11,6 +11,7 @@ import { PostsComponent } from './components/posts/posts.component';
 
 import { ApiService, MockApiService } from './shared/';
 import { routes } from './app.routes';
+import { SlicePipe } from './components/posts/shared/slice.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { routes } from './app.routes';
     DireBonjourComponent,
     //TemplateDrivenFormComponent,
     ModelDrivenFormComponent,
-    PostsComponent
+    PostsComponent,
+    SlicePipe
   ],
   imports: [
     BrowserModule,
