@@ -2,9 +2,10 @@
   {{title}}
 </h1>
 <div>
-    <app-dire-bonjour [nom]="'Damien'" (clique)="alert($event)"></app-dire-bonjour>
+    <app-dire-bonjour [nom]="name" (clique)="alert($event)"></app-dire-bonjour>
+    <app-template-driven-form (submitted)="changeName($event)"></app-template-driven-form>
 </div>
-<div>
+<!-- <div>
     <p> Voici la liste de postes via mon apiService mocked</p>
     <ul>
         <li *ngFor="let post of posts">
@@ -12,4 +13,4 @@
             <p>{{ post.body }}</p>
         </li>
     </ul>
-</div>
+</div> -->

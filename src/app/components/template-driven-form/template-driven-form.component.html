@@ -1,0 +1,11 @@
+<p>Voulez-vous changer de nom ?</p>
+<form #userForm="ngForm" (ngSubmit)="send(userForm.value)">
+
+	<label>Nouveau nom:</label>
+	<input type="text" name="name" ngModel required>
+	<div *ngIf="name.errors?.required">
+	   <span>Je suis sur que vous avez un prénom</span>
+	</div>
+
+	<input type="submit" value="Changer de nom">
+</form>

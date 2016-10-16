@@ -7,8 +7,8 @@ import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 })
 export class DireBonjourComponent implements OnInit {
 
-@Input('nom') inputPropriete: string;
-@Output('clique') outputEvenement: EventEmitter<string>;
+  @Input('nom') inputPropriete: string;
+  @Output('clique') outputEvenement: EventEmitter<string>;
 
   constructor() {
       this.outputEvenement = new EventEmitter<string>();

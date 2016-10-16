@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DireBonjourComponent } from './components/dire-bonjour/dire-bonjour.component';
+import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DireBonjourComponent
+    DireBonjourComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,

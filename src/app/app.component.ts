@@ -12,8 +12,9 @@ import { ApiService, MockApiService } from './shared/';
 })
 export class AppComponent implements OnInit {
 
-  title = 'Hello world ? :)';
+  title:string = 'Hello world ? :)';
   posts: Array<any> = [];
+  name: string = 'Damien';
 
   constructor (private api: ApiService) {}
 
@@ -26,6 +27,10 @@ export class AppComponent implements OnInit {
 
   alert(content: string) {
       alert(content);
+  }
+
+  changeName(name: string) {
+  	this.name = name;
   }
 
 }
